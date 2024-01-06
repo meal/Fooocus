@@ -124,7 +124,7 @@ path_upscale_models = get_dir_or_set_default('path_upscale_models', '/data/model
 path_inpaint = get_dir_or_set_default('path_inpaint', '/data/models/inpaint/')
 path_controlnet = get_dir_or_set_default('path_controlnet', '/data/models/controlnet/')
 path_clip_vision = get_dir_or_set_default('path_clip_vision', '/data/models/clip_vision/')
-path_fooocus_expansion = get_dir_or_set_default('path_fooocus_expansion', '/data/models/prompt_expansion/fooocus_expansion')
+path_fooocus_expansion = get_dir_or_set_default('path_fooocus_expansion', '../models/prompt_expansion/fooocus_expansion')
 path_outputs = get_dir_or_set_default('path_outputs', '/data/outputs/')
 
 
