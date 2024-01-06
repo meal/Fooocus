@@ -116,16 +116,16 @@ def get_dir_or_set_default(key, default_value):
         return dp
 
 
-path_checkpoints = get_dir_or_set_default('path_checkpoints', '../models/checkpoints/')
-path_loras = get_dir_or_set_default('path_loras', '../models/loras/')
-path_embeddings = get_dir_or_set_default('path_embeddings', '../models/embeddings/')
-path_vae_approx = get_dir_or_set_default('path_vae_approx', '../models/vae_approx/')
-path_upscale_models = get_dir_or_set_default('path_upscale_models', '../models/upscale_models/')
-path_inpaint = get_dir_or_set_default('path_inpaint', '../models/inpaint/')
-path_controlnet = get_dir_or_set_default('path_controlnet', '../models/controlnet/')
-path_clip_vision = get_dir_or_set_default('path_clip_vision', '../models/clip_vision/')
-path_fooocus_expansion = get_dir_or_set_default('path_fooocus_expansion', '../models/prompt_expansion/fooocus_expansion')
-path_outputs = get_dir_or_set_default('path_outputs', '../outputs/')
+path_checkpoints = get_dir_or_set_default('path_checkpoints', '/data//models/checkpoints/')
+path_loras = get_dir_or_set_default('path_loras', '/data/models/loras/')
+path_embeddings = get_dir_or_set_default('path_embeddings', '/data/models/embeddings/')
+path_vae_approx = get_dir_or_set_default('path_vae_approx', '/data/models/vae_approx/')
+path_upscale_models = get_dir_or_set_default('path_upscale_models', '/data/models/upscale_models/')
+path_inpaint = get_dir_or_set_default('path_inpaint', '/data/models/inpaint/')
+path_controlnet = get_dir_or_set_default('path_controlnet', '/data/models/controlnet/')
+path_clip_vision = get_dir_or_set_default('path_clip_vision', '/data/models/clip_vision/')
+path_fooocus_expansion = get_dir_or_set_default('path_fooocus_expansion', '/data/models/prompt_expansion/fooocus_expansion')
+path_outputs = get_dir_or_set_default('path_outputs', '/data/outputs/')
 
 
 def get_config_item_or_set_default(key, default_value, validator, disable_empty_as_none=False):
@@ -133,7 +133,7 @@ def get_config_item_or_set_default(key, default_value, validator, disable_empty_
 
     if key not in visited_keys:
         visited_keys.append(key)
-    
+
     if key not in config_dict:
         config_dict[key] = default_value
         return default_value
